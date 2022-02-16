@@ -48,7 +48,9 @@
             <p class="pt-3">alan.buba5@gmail.com</p>
         </div>
         <form id="contact-form" class="flex flex-col py-5">
-            <label class="m-1 font-thin uppercase" for="email">Email:</label>
+            <label class="mt-4 font-thin uppercase" for="from_name">Name:</label>
+            <input class="m-1 my-input mx-auto w-full" type="text" id="from_name" name="from_name" placeholder="Your name" required>
+            <label class="mt-4 font-thin uppercase" for="email">Email:</label>
             <input class="m-1 my-input mx-auto w-full" type="email" id="email" name="from_name" placeholder="Your email address" required>
             <label class="mt-4 mb-1 font-thin uppercase" for="comment">Message:</label>
             <textarea class="m-1 my-input mx-auto w-full" name="message" rows="1" placeholder="Your message" required oninput='this.style.height = "";this.style.height = this.scrollHeight+1 + "px"'></textarea>
