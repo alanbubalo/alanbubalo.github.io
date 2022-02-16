@@ -1,0 +1,14 @@
+{
+  "name": "alanbubalo.github.io",
+  "version": "1.0.0",
+  "description": "Here is required files for my website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.0.23"
+  }
+}

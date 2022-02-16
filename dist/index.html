@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Style.css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <title>Alan Bubalo</title>
+</head>
+
+<body>
+    <header class="bg-gray-900 text-gray-50 py-4 px-6 shadow-md">
+        <h1 class="text-4xl uppercase font-light">Alan Bubalo</h1>
+    </header>
+
+    <main class="flex justify-between flex-col lg:flex-row bg-gray-100 text-gray-900 h-screen">
+        <div id="about-me" class="flex-1 m-6 lg:p-16 p-10 grid place-self-center border border-gray-900">
+            <h2 class="text-3xl uppercase font-light pb-5">About me</h2>
+            <p>My name is Alan Bubalo. I am a 20-year old third-semester student at the Faculty
+                of Informatics at Juraj Dobrila University Pula.</p>
+            <p>Programming, C++ projects, and little Unity games are some of my favorite pastimes. I am one
+                of the students who receive scholarship. In addition, I have a rudimentary understanding of Python,
+                HTML, CSS and Javascript.</p>
+        </div>
+        <img class="h-2/3 self-center m-6" src="../images/alanbubaloedit.jpg" alt="Alan Bubalo">
+    </main>
+
+    <footer class="grid bg-gray-900 text-gray-50 place-content-center text-center font-light h-screen">
+        <h2 class="text-3xl p-6 font-thin uppercase">Contact</h2>
+        <div class="flex rounded-sm flex-wrap w-fit mx-auto">
+            <a class="fb hover:bg-blue-500 contact-link border-blue-500 text-blue-500 hover:text-gray-50" href="https://www.facebook.com/alan.bubalo"
+                target="_blank">Facebook</a>
+            <a class="ig hover:bg-pink-600 contact-link border-pink-600 text-pink-600 hover:text-gray-50" href="https://www.instagram.com/alan_bubalo/"
+                target="_blank">Instagram</a>
+            <a class="li hover:bg-blue-600 contact-link border-blue-600 text-blue-600 hover:text-gray-50" href="https://www.linkedin.com/in/alan-bubalo-01138b207/"
+                target="_blank">LinkedIn</a>
+            <a class="gh hover:bg-gray-700 contact-link border-gray-700 text-gray-500 hover:text-gray-50" href="https://github.com/AlanBubalo"
+                target="_blank">GitHub</a>
+        </div>
+        <div class="p-6">
+            <h4 class="text-xl uppercase font-thin">My email:</h4>
+            <p class="pt-3">alan.buba5@gmail.com</p>
+        </div>
+        <form id="contact-form" class="flex flex-col py-5">
+            <label class="m-1 font-thin uppercase" for="email">Email:</label>
+            <input class="m-1 my-input mx-auto w-full" type="email" id="email" name="from_name" placeholder="Your email address" required>
+            <label class="mt-4 mb-1 font-thin uppercase" for="comment">Message:</label>
+            <textarea class="m-1 my-input mx-auto w-full" name="message" rows="1" placeholder="Your message" required oninput='this.style.height = "";this.style.height = this.scrollHeight+1 + "px"'></textarea>
+            <button class="mt-4 px-12 py-2 border border-gray-700 duration-150 hover:bg-gray-700 uppercase font-thin" type="submit">SENT<button>
+        </form>
+    </footer>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Script.js -->
+    <script src="script.js"></script>
+</body>
+
+</html>

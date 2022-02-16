@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.my-input {
+  @apply text-gray-200 bg-inherit border-0 border-b border-gray-700;
+}
+
+.contact-link {
+  @apply border p-2 m-2 duration-150;
+}
+
+@tailwind utilities;
