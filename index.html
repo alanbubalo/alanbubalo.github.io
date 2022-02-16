@@ -21,7 +21,9 @@
 
     <main class="flex justify-between flex-col lg:flex-row bg-gray-100 text-gray-900 h-screen">
         <div id="about-me" class="flex-1 m-6 lg:p-16 p-10 grid place-self-center border border-gray-900">
-            <h2 class="text-3xl uppercase font-light pb-5">About me</h2>
+            <h2 class="text-3xl uppercase font-light pb-5">
+                
+                About me</h2>
             <p>My name is Alan Bubalo. I am a 20-year old third-semester student at the Faculty
                 of Informatics at Juraj Dobrila University Pula.</p>
             <p>Programming, C++ projects, and little Unity games are some of my favorite pastimes. I am one
@@ -51,14 +53,30 @@
             <label class="mt-4 font-thin uppercase" for="from_name">Name:</label>
             <input class="m-1 my-input mx-auto w-full" type="text" id="from_name" name="from_name" placeholder="Your name" required>
             <label class="mt-4 font-thin uppercase" for="email">Email:</label>
-            <input class="m-1 my-input mx-auto w-full" type="email" id="email" name="from_name" placeholder="Your email address" required>
+            <input class="m-1 my-input mx-auto w-full" type="email" id="email" name="email" placeholder="Your email address" required>
             <label class="mt-4 mb-1 font-thin uppercase" for="comment">Message:</label>
             <textarea class="m-1 my-input mx-auto w-full" name="message" rows="1" placeholder="Your message" required oninput='this.style.height = "";this.style.height = this.scrollHeight+1 + "px"'></textarea>
-            <button class="mt-4 px-12 py-2 border border-gray-700 duration-150 hover:bg-gray-700 uppercase font-thin" type="submit">SENT<button>
+            <button id="send" class="flex justify-center mt-4 px-12 py-2 border border-gray-700 duration-150 hover:bg-gray-700 uppercase font-thin" type="submit">
+                
+                <div id="sending" class="hidden flex justify-center">
+                    <div class="border border-gray-600 border-t-gray-200 rounded-full animate-spin w-6 h-6 mr-2">
+                    </div>
+                    <p>SENDING</p>
+                </div>
+                <p id="not_sending" class="">SEND</p><button>
         </form>
     </footer>
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- EmailJS -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_K5XZXYFal24z6Fqcdc9uO");
+   })();
+</script>
     <!-- Script.js -->
     <script src="/dist/script.js"></script>
 </body>

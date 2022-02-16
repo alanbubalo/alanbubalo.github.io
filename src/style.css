@@ -13,4 +13,7 @@
   @apply border p-2 m-2 duration-150;
 }
 
+.sending {
+  @apply animate-pulse bg-gray-700;
+}
 @tailwind utilities;
