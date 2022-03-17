@@ -7,81 +7,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Style.css -->
     <link rel="stylesheet" href="/dist/style.css">
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <!-- Font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+    </style>
     <title>Alan Bubalo</title>
 </head>
 
 <body>
-    <header class="bg-gray-900 text-gray-50 py-4 px-6 shadow-md">
-        <h1 class="text-4xl uppercase font-light">Alan Bubalo</h1>
+    <div class="bg-slate-900 text-slate-300">
+    <div class="container mx-auto">
+    
+    <!-- Navigation -->
+    <header class="flex border-b border-slate-500 h-screen">
+        <div class="p-4 mt-32 text-xl sm:text-3xl font-light">
+            <h1>My name is</h1>
+            <h1 class="name text-6xl sm:text-8xl py-12 uppercase transition fade-in duration-300">Alan Bubalo</h1>
+            <p>Student - Front end developer - Freelancer</p>
+        </div>
     </header>
 
-    <main class="flex justify-between flex-col lg:flex-row bg-gray-100 text-gray-900 h-screen">
-        <div id="about-me" class="flex-1 m-6 lg:p-16 p-10 grid place-self-center border border-gray-900">
-            <h2 class="text-3xl uppercase font-light pb-5">
-                
-                About me</h2>
-            <p>My name is Alan Bubalo. I am a 20-year old third-semester student at the Faculty
-                of Informatics at Juraj Dobrila University Pula.</p>
-            <p>Programming, C++ projects, and little Unity games are some of my favorite pastimes. I am one
-                of the students who receive scholarship. In addition, I have a rudimentary understanding of Python,
-                HTML, CSS and Javascript.</p>
-        </div>
-        <img class="h-2/3 self-center m-6" src="../images/alanbubaloedit.jpg" alt="Alan Bubalo">
+    <!-- Page Content -->
+    <main class="grid grids-col-1 lg:grid-cols-2 justify-between border-b border-slate-500 min-h-screen">
+        <section id="about-me" class="m-6 p-8 lg:p-16 place-self-center border border-slate-500">
+            <h2>About me</h2>
+            <div class="text-slate-400">
+                <p>I am a 20-year old forth-semester student at the Faculty
+                    of Informatics at Juraj Dobrila University Pula.</p>
+                <!--
+                <p>In my free time, I like to practise web designing with HTML, CSS and JS, C++ projects, and little Unity games are some of my favorite pastimes. I am one
+                    of the students who receive scholarship. In addition, I have a rudimentary understanding of Python,
+                    HTML, CSS and Javascript.</p>
+                -->
+            </div>
+        </section>
+        <img class="place-self-center rounded" src="../src/img/alanbubaloedit.jpg" alt="Alan Bubalo">
     </main>
 
-    <footer class="grid bg-gray-900 text-gray-50 place-content-center text-center font-light h-screen">
-        <h2 class="text-3xl p-6 font-thin uppercase">Contact</h2>
-        <div class="flex rounded-sm flex-wrap w-fit mx-auto">
-            <a class="fb hover:bg-blue-500 contact-link border-blue-500 text-blue-500 hover:text-gray-50" href="https://www.facebook.com/alan.bubalo"
+    <!-- Footer -->
+    <footer class="footer text-center h-screen">
+        <h2>Contact me</h2>
+        <div class="flex rounded-sm flex-wrap w-fit mx-auto justify-center">
+            <a class="fb hover:bg-blue-500 contact-link border-blue-500 text-blue-500" href="https://www.facebook.com/alan.bubalo"
                 target="_blank">Facebook</a>
-            <a class="ig hover:bg-pink-600 contact-link border-pink-600 text-pink-600 hover:text-gray-50" href="https://www.instagram.com/alan_bubalo/"
+            <a class="ig hover:bg-pink-600 contact-link border-pink-600 text-pink-600" href="https://www.instagram.com/alan_bubalo/"
                 target="_blank">Instagram</a>
-            <a class="li hover:bg-blue-600 contact-link border-blue-600 text-blue-600 hover:text-gray-50" href="https://www.linkedin.com/in/alan-bubalo-01138b207/"
+            <a class="li hover:bg-blue-600 contact-link border-blue-600 text-blue-600" href="https://www.linkedin.com/in/alan-bubalo-01138b207/"
                 target="_blank">LinkedIn</a>
-            <a class="gh hover:bg-gray-700 contact-link border-gray-700 text-gray-500 hover:text-gray-50" href="https://github.com/AlanBubalo"
+            <a class="gh hover:bg-gray-700 contact-link border-gray-700 text-gray-500" href="https://github.com/AlanBubalo"
                 target="_blank">GitHub</a>
         </div>
         <div class="p-6">
-            <h4 class="text-xl uppercase font-thin">My email:</h4>
+            <h4 class="text-lg uppercase font-thin">My email:</h4>
             <p class="pt-3">alan.buba5@gmail.com</p>
         </div>
-        <form id="contact-form" class="flex flex-col py-5">
-            <label class="mt-4 font-thin uppercase" for="from_name">Name:</label>
-            <input class="m-1 my-input mx-auto w-full" type="text" id="from_name" name="from_name" placeholder="Your name" required>
-            <label class="mt-4 font-thin uppercase" for="email">Email:</label>
-            <input class="m-1 my-input mx-auto w-full" type="email" id="email" name="email" placeholder="Your email address" required>
-            <label class="mt-4 mb-1 font-thin uppercase" for="comment">Message:</label>
-            <textarea class="m-1 my-input mx-auto w-full" name="message" rows="1" placeholder="Your message" required oninput='this.style.height = "";this.style.height = this.scrollHeight+1 + "px"'></textarea>
-            <button id="send" class="flex justify-center mt-4 px-12 py-2 border border-gray-700 duration-150 hover:bg-gray-700 uppercase font-thin" type="submit">
-                <p id="not_sending" class="">SEND</p>
+        <form id="contact-form" class="flex flex-col font-thin">
+            <label for="from_name">Name:</label>
+            <input class="my-input" type="text" id="from_name" name="from_name" placeholder="Your name" required>
+            <label for="email">Email:</label>
+            <input class="my-input" type="email" id="email" name="email" placeholder="Your email address" required>
+            <label for="comment">Message:</label>
+            <textarea class="my-input resize-none" name="message" rows="1" placeholder="Your message" required oninput='this.style.height = "";this.style.height = this.scrollHeight+2 + "px"'></textarea>
+            <button id="send" class="flex justify-center mt-4 px-12 py-2 border border-slate-500 duration-300 hover:bg-slate-500 uppercase font-thin" type="submit">
+                <p id="ready-to-send">SEND</p>
                 <div id="sending" class="hidden flex justify-center">
-                    <div class="border border-gray-600 border-t-gray-200 rounded-full animate-spin w-6 h-6 mr-2">
+                    <div class="border border-slate-600 border-t-slate-200 rounded-full animate-spin w-6 h-6 mr-2">
                     </div>
                 </div>
                 <div id="sent" class="hidden flex justify-center">
                     SENT
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 18 18" fill="currentColor">
-                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                        <path fill-rule="evenodd"
+                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                            clip-rule="evenodd"
+                        />
                     </svg>
                 </div>
             <button>    
         </form>
     </footer>
+
+    </div>
+    </div>
+    
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- EmailJS -->
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init("user_K5XZXYFal24z6Fqcdc9uO");
-   })();
-</script>
+    </script>
+    <script type="text/javascript">
+    (function(){
+       emailjs.init("user_K5XZXYFal24z6Fqcdc9uO");
+    })();
+    </script>
     <!-- Script.js -->
     <script src="/dist/script.js"></script>
 </body>

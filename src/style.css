@@ -1,19 +1,50 @@
 @tailwind base;
 @tailwind components;
 
+:root {
+  --main-color: #2a2d5c;
+}
+
 * {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  @apply text-3xl uppercase font-thin pb-6;
+}
+
+.name {
+  animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+footer {
+  padding: 9rem calc(45% - 9rem);
+  padding-bottom: 0;
 }
 
 .my-input {
-  @apply text-gray-200 bg-inherit border-0 border-b border-gray-700;
+  @apply bg-inherit border-0 border-b border-slate-500 m-1 mx-0 w-full;
+}
+
+label {
+  @apply text-lg uppercase mt-4;
 }
 
 .contact-link {
-  @apply border p-2 m-2 duration-150;
+  @apply border p-2 m-2 duration-300 hover:text-slate-50;
 }
 
 .sending {
-  @apply animate-pulse bg-gray-700;
+  @apply animate-pulse bg-slate-500;
 }
+
 @tailwind utilities;
