@@ -1,3 +1,7 @@
+(function () {
+  emailjs.init("user_K5XZXYFal24z6Fqcdc9uO");
+})();
+
 window.onload = function () {
   document
     .getElementById("contact-form")
@@ -8,7 +12,7 @@ window.onload = function () {
       const readyToSend = document.getElementById("ready-to-send");
       const sent = document.getElementById("sent");
       const form = {
-        from_name: `${document.getElementById("from_name").value} (${
+        from_name: `${document.getElementById("from-name").value} (${
           document.getElementById("email").value
         })`,
         message: `${document.getElementById("message").value}`,
@@ -34,7 +38,7 @@ window.onload = function () {
           sendButton.classList.remove("sending");
           sending.classList.add("hidden");
           readyToSend.classList.remove("hidden");
-        }
+        },
       );
     });
 };

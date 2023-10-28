@@ -1,145 +1,144 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Style.css -->
-    <link rel="stylesheet" href="/dist/style.css" />
-    <!-- Font -->
+    <link rel="stylesheet" href="/dist/output.css" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap");
     </style>
+
     <title>Alan Bubalo</title>
   </head>
 
-  <body>
+  <body class="overflow-x-hidden text-white">
     <header>
-      <nav>
+      <nav
+        class="flex justify-center space-y-0 pt-6 sm:flex-row sm:space-x-4 md:space-x-16"
+      >
         <a href="#home">Home</a>
         <a href="#about-me">About Me</a>
-        <a href="#portfolio">Portfolio</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
 
-      <div id="home">
+      <div
+        id="home"
+        class="flex flex-col justify-between gap-4 pt-32 sm:flex-row"
+      >
         <div class="my-auto">
-          <h3>My name is</h3>
-          <h1>ALAN BUBALO</h1>
-          <h5>Student - Backend Developer - Freelancer</h5>
+          <h2>Student - Full Stack Developer - Python, JS, & C++</h2>
         </div>
-        <img src="../src/img/alan_bubalo.jpg" alt="Alan Bubalo" />
+        <img
+          class="object-top-left block h-[300px] min-w-[300px] max-w-[300px] rounded-full object-cover"
+          src="../src/img/alan_bubalo.jpg"
+          alt="Alan Bubalo"
+        />
       </div>
     </header>
 
     <main>
       <section id="about-me">
-        <!-- <div class="background"></div> -->
-        <h2>About Me</h2>
-        <p>
-          I am a 22-year old third year student at the Faculty of Informatics
-          at Juraj Dobrila University Pula.
-        </p>
-      </section>
-
-      <section id="portfolio">
-        <!-- <div class="background"></div> -->
-        <h2>Portfolio</h2>
-        <div>
-          <article id="faculty">
-            <h4>
-              Faculty of Informatics - Juraj Dobrila University of Pula (ICT)
-            </h4>
+        <h2>About me</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2">
+          <article class="bg-transparent">
+            <h4>Competitive Programming</h4>
+            <p>
+              I began my programming journey with C++ in middle school,
+              competing from 5th to 8th grade. This early exposure honed my
+              problem-solving skills and made it easier to adapt to various
+              programming languages. In faculty, I took on challenges at
+              esteemed competitions like ICPC and CERC in Ljubljana.
+            </p>
+          </article>
+          <article class="bg-transparent">
+            <h4>Juraj Dobrila University of Pula - Faculty of Informatics</h4>
             <p>
               I've upgraded my skills in C++ by learning more about data
               structure and algorithms. I learned basics about web programming
-              and easily adapted to HTML, CSS and JavaScript.
-            </p>
-            <p>
-              Currently learning more about Vue while making projects. I also
-              made 2 projects with my team in MySQL and thus learned more about
-              databases and SQL.
+              and easily adapted to HTML, CSS and JavaScript. I am also familiar
+              with many technologies such as PostgreSQL, MySQL, Python, FastAPI,
+              and Flask.
             </p>
           </article>
-          <article id="web-development">
-            <h4>Web Development</h4>
+          <article id="sou-program">
+            <h4>
+              Educator in Software Engineering Workshop - Šou program community
+            </h4>
             <p>
-              I worked on a Vue project about workout which inspired me to
-              practice and learn about web development much more.
+              The goal of the Software Engineering workshop is to provide
+              students with an insight into the development process of the Show
+              Program application by adding the functionality of the "to-do"
+              section. Students will have the opportunity to learn first-hand
+              the methodologies and problem-solving strategies in software
+              engineering, following the development of both the frontend and
+              the backend of the new section.
             </p>
-            <p>
-              Usually I want to make little services like building a web page or
-              a whole web app while practicing because I think that would be the
-              best practice. I also made some little unworthy to mention pages.
-            </p>
-          </article>
-        </div>
-        <div>
-          <article id="competitive-programming-and-c++">
-            <h4>Competitive Programming and C++</h4>
-            <p>
-              At the times when I was in middle school, I started my first
-              programming lessons on C++. Starting from 5th to 8th grade, I
-              contested in programming competitions in MSLogo and C++ and was
-              the best in my region every year.
-            </p>
-            <p>
-              Early learning about procedural programming, especially in a bit
-              harder language like C++, really helped me understand the concept
-              of problem solving and how a machine thinks in a way. It also
-              helps me in general understand and adapt to almost any kind of
-              programming language.
-            </p>
+            <a
+              href="https://www.linkedin.com/company/sou-program/"
+              target="_blank"
+            >
+              Visit Šou Program
+            </a>
           </article>
         </div>
       </section>
 
       <section id="projects">
-        <!-- <div class="background"></div> -->
-        <h2>Projects</h2>
-        <div>
-          <article id="fitactive">
-            <h4>FitActive</h4>
-            <p>
-              The project was made by my colleague and me and it's all about
-              encouraging users to stay in shape. It has use cases like editing
-              a workout schedule, exercising with a timer, keeping water intake
-              and keeping record of your physical data such as weight, height,
-              age and gender.
-            </p>
-            <a href="https://fitactive.netlify.app/" target="_blank"
-              >Visit</a
-            >
+        <h2>Projects & Experiences</h2>
+        <div class="grid grid-cols-1 md:grid-cols-1">
+          <article id="fitactive" class="flex flex-col p-0 md:flex-row">
+            <div class="basis-1/3 p-6">
+              <h4>FitActive</h4>
+              <p class="">
+                The project was made by my colleague and me and it's all about
+                encouraging users to stay in shape. It has use cases like
+                editing a workout schedule, exercising with a timer, keeping
+                water intake and keeping record of your physical data such as
+                weight, height, age and gender. Technologies used in the project
+                are Vue.js and Firebase.
+              </p>
+              <a href="https://fitactive.netlify.app/" target="_blank"
+                >Visit the app</a
+              >
+            </div>
+            <div class="h-full flex-1">
+              <img
+                class="h-full object-cover object-center"
+                src="src/img/fitactive.png"
+                alt="Fitactive app page"
+              />
+            </div>
           </article>
-          <article id="bachelor-degree-final-paper">
+          <article id="bachelor-degree-final-paper" class="w-1/2 bg-gray-700">
             <h4>Modeling low-code databases with executable UML</h4>
             <p>
               With this project, you're able to generate a database schema in
-              <a href="https://baserow.io/">Baserow</a> from the UML class diagram. It's
-              essentially a REST API for transforming UML class diagram into Baserow database.
-              UML class diagram as an XMI file is parsed in Python and then a database
-              is created with all tables as classes, fields as attributes, enumerations
-              and associations from a model.
+              Baserow from the UML class diagram. It's a REST API for
+              transforming UML class diagram into Baserow database. UML class
+              diagram as an XMI file is parsed in Python and then a database is
+              created with all tables as classes, fields as attributes,
+              enumerations and associations from a model.
             </p>
-            <a href="https://github.com/AlanBubalo/modeling-low-code-databases-with-executable-uml" target="_blank"
-              >Visit</a
+            <a
+              href="https://github.com/AlanBubalo/modeling-low-code-databases-with-executable-uml"
+              target="_blank"
             >
+              Visit repository
+            </a>
           </article>
         </div>
       </section>
     </main>
 
-    <footer id="contact">
-      <div id="info">
+    <footer id="contact" class="flex justify-center">
+      <div id="info" class="mx-auto flex max-w-fit -skew-y-2 flex-col">
         <h2>Contact</h2>
-        <p>
-          Feel free to contact me if you have any questions for me. I'll be
-          available to answer within a day.
-        </p>
-        <h5>My email:</h5>
+        <p>Feel free to contact me if you are interested.</p>
+        <h5 class="mt-3 mb-1">My email:</h5>
         <p>alan.buba5@gmail.com</p>
-        <div class="flex gap-3 mt-8">
+        <div class="mt-8 flex gap-3">
           <a
             id="facebook"
             href="https://www.facebook.com/alan.bubalo"
@@ -155,8 +154,9 @@
             >
               <path
                 d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
-              /></svg
-          ></a>
+              />
+            </svg>
+          </a>
           <a
             id="instagram"
             href="https://www.instagram.com/alan_bubalo"
@@ -212,10 +212,13 @@
           </a>
         </div>
       </div>
-      <form id="contact-form">
+      <form
+        id="contact-form"
+        class="mx-auto flex w-80 -skew-y-2 flex-col gap-3"
+      >
         <div>
-          <label for="from_name">Name</label>
-          <input type="text" name="from_name" id="from_name" />
+          <label for="from-name">Name</label>
+          <input type="text" name="from-name" id="from-name" />
         </div>
         <div>
           <label for="email">Email</label>
@@ -229,12 +232,12 @@
           <div id="ready-to-send">Send</div>
           <div
             id="sending"
-            class="border border-slate-600 border-t-slate-200 rounded-full animate-spin w-6 h-6 hidden"
+            class="hidden h-6 w-6 animate-spin rounded-full border border-slate-600 border-t-slate-200"
           ></div>
           <div id="sent" class="hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6 inline"
+              class="inline h-6 w-6"
               viewBox="0 0 18 23"
               fill="currentColor"
             >
@@ -250,19 +253,12 @@
       </form>
     </footer>
 
-    <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- EmailJS -->
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
     ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("user_K5XZXYFal24z6Fqcdc9uO");
-      })();
-    </script>
-    <!-- Script.js -->
+
     <script src="/src/script.js"></script>
   </body>
 </html>
